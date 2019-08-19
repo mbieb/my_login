@@ -56,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 editor.putBoolean(Login.session_status, false);
                 editor.putString(TAG_ID, null);
                 editor.putString(TAG_USERNAME, null);
+                editor.putString(TAG_NAMA, null);
+                editor.putString(TAG_EMAIL, null);
+                editor.putString(TAG_NO_HP, null);
                 editor.apply();
 
                 Intent intent = new Intent(MainActivity.this, Login.class);

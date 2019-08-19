@@ -163,8 +163,6 @@ public class Login extends AppCompatActivity {
 
                         Log.e("Successfully Login!", jObj.toString());
 
-                        Toast.makeText(getApplicationContext(), jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
-
                         // menyimpan login ke session
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putBoolean(session_status, true);
